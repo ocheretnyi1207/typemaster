@@ -1,0 +1,20 @@
+{
+  "name": "typemaster",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gulp start",
+    "build": "gulp build"
+  },
+  "author": "ocheretnyi",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "2.27.10",
+    "del": "6.1.0",
+    "gulp": "4.0.2",
+    "gulp-plumber": "1.2.1",
+    "gulp-rename": "2.0.0",
+    "gulp-sass": "5.1.0",
+    "gulp-sourcemaps": "3.0.0",
+    "sass": "1.51.0"
+  }
+}
