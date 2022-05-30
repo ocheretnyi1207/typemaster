@@ -1,1 +1,15 @@
 .product-features
+  padding-top: 111px
+
+  & li:first-child::before
+    content: ""
+    background: url("/img/icon-pc.svg")
+    width: 26px
+    height: 21px
+    position: absolute
+    left: calc(50% - 26px/2)
+    top: 22px
+
+
+  & li:last-child
+    margin-bottom: 0
