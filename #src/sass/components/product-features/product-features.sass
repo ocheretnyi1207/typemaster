@@ -3,13 +3,43 @@
 
   & li:first-child::before
     content: ""
-    background: url("/img/icon-pc.svg")
+    background: url("/img/icon-pc.svg") no-repeat
     width: 26px
     height: 21px
     position: absolute
     left: calc(50% - 26px/2)
     top: 22px
+    z-index: 2
 
+  & li:nth-child(4n+2)::before
+    content: ""
+    background: url("/img/icon-bluetooth.svg") no-repeat
+    width: 18px
+    height: 28px
+    position: absolute
+    left: calc(50% - 18px/2)
+    top: 18px
+    z-index: 2
+
+  & li:nth-child(4n+3)::before
+    content: ""
+    background: url("/img/icon-battery.svg") no-repeat
+    width: 32px
+    height: 20px
+    position: absolute
+    left: calc(50% - 32px/2)
+    top: 22px
+    z-index: 2
+
+  & li:last-child::before
+    content: ""
+    background: url("/img/icon-lamp.svg") no-repeat
+    width: 32px
+    height: 32px
+    position: absolute
+    left: calc(50% - 32px/2)
+    top: 16px
+    z-index: 2
 
   & li:last-child
     margin-bottom: 0
