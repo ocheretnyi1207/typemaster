@@ -1,6 +1,12 @@
 .product-features
   padding-top: 111px
 
+  @media ($width-tablet)
+    padding-top: 142px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
   & li:first-child::before
     content: ""
     background: url("/img/icon-pc.svg") no-repeat
@@ -10,6 +16,9 @@
     left: calc(50% - 26px/2)
     top: 22px
     z-index: 2
+
+    @media ($width-tablet)
+      left: 20px
 
   & li:nth-child(4n+2)::before
     content: ""
@@ -21,6 +30,10 @@
     top: 18px
     z-index: 2
 
+    @media ($width-tablet)
+      left: 22px
+
+
   & li:nth-child(4n+3)::before
     content: ""
     background: url("/img/icon-battery.svg") no-repeat
@@ -31,6 +44,9 @@
     top: 22px
     z-index: 2
 
+    @media ($width-tablet)
+      left: 18px
+
   & li:last-child::before
     content: ""
     background: url("/img/icon-lamp.svg") no-repeat
@@ -40,6 +56,9 @@
     left: calc(50% - 32px/2)
     top: 16px
     z-index: 2
+
+    @media ($width-tablet)
+      left: 16px
 
   & li:last-child
     margin-bottom: 0

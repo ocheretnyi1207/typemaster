@@ -3,6 +3,9 @@
   margin-bottom: 64px
   position: relative
 
+  @media ($width-tablet)
+    width: 307px
+
   &::after
     position: absolute
     content: ""
@@ -13,6 +16,9 @@
     left: calc(50% - 65px/2)
     top: 0
     z-index: 1
+
+    @media ($width-tablet)
+      left: 0
 
 
 
