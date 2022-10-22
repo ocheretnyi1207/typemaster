@@ -1,0 +1,41 @@
+.preorder-link
+  font-size: 16px
+  line-height: 26px
+  font-weight: 700
+  text-transform: uppercase
+  width: 150px
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 8px
+  min-height: 48px
+  position: relative
+
+  @media ($width-tablet)
+    min-height: 58px
+    width: 176px
+
+  &--nav
+    color: $color-cobalt-blue
+    background-color: $color-lavander
+
+  &--header
+    background: $color-pumpkin
+    color: $color-white
+    margin-bottom: 64px
+
+    @media ($width-tablet)
+      margin-bottom: 0
+
+    &::after
+      content: "Release on 5/27"
+      width: 127px
+      height: 26px
+      color: $color-light-slate-gray
+      position: absolute
+      left: 185px
+      top: 11px
+
+      @media ($width-tablet)
+        left: 211px
+        top: 15px

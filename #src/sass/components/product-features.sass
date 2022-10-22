@@ -64,3 +64,53 @@
 
   & li:last-child
     margin-bottom: 0
+
+  &__item
+    padding-top: 113px
+    margin-bottom: 64px
+    position: relative
+
+    @media ($width-tablet)
+      width: 307px
+
+    &::after
+      position: absolute
+      content: ""
+      width: 65px
+      height: 65px
+      border-radius: 16px
+      background-color: $color-pumpkin
+      left: calc(50% - 65px/2)
+      top: 0
+      z-index: 1
+
+      @media ($width-tablet)
+        width: 71px
+        left: 0
+
+    &--title
+      text-transform: uppercase
+      font-size: 24px
+      line-height: 28px
+      text-align: center
+      font-weight: 900
+      width: 215px
+      margin: 0 auto
+      margin-bottom: 24px
+      color: $color-cobalt-blue
+
+      @media ($width-tablet)
+        margin: 0
+        margin-bottom: 24px
+        text-align: left
+
+    &--text
+      font-weight: 500
+      font-size: 16px
+      line-height: 26px
+      text-align: center
+      color: $color-light-slate-gray
+
+      @media ($width-tablet)
+        text-align: left
+
