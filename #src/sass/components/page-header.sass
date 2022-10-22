@@ -1,18 +1,29 @@
 .page-header
   margin-bottom: 20px
+  padding-top: 23px
+
+  @media ($width-tablet)
+    padding-top: 40px
 
   &__nav
     display: flex
     justify-content: space-between
-    padding-top: 23px
     margin-bottom: 64px
 
     @media ($width-tablet)
-      padding-top: 40px
-      margin-bottom: 122px
+      margin-bottom: 62px
 
   &__logo
     align-self: center
+
+  &__wrap
+    @media ($width-tablet)
+      display: flex
+
+  &__innerwrap
+    @media ($width-tablet)
+      width: 345px
+      padding-top: 60px
 
   &__title
     font-size: 48px
