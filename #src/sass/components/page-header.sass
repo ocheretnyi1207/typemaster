@@ -5,6 +5,10 @@
   @media ($width-tablet)
     padding-top: 40px
 
+  @media ($width-desktop)
+    margin-bottom: 11px
+    padding-top: 55px
+
   &__nav
     display: flex
     justify-content: space-between
@@ -13,17 +17,28 @@
     @media ($width-tablet)
       margin-bottom: 62px
 
+    @media ($width-desktop)
+      margin-bottom: 83px
+
   &__logo
     align-self: center
 
   &__wrap
     @media ($width-tablet)
       display: flex
+      justify-content: space-between
+
+    @media ($width-desktop)
+      width: 100%
+
 
   &__innerwrap
     @media ($width-tablet)
       width: 345px
       padding-top: 60px
+
+    @media ($width-desktop)
+      width: 445px
 
   &__title
     font-size: 48px
@@ -31,6 +46,11 @@
     font-weight: 900
     text-transform: uppercase
     margin-bottom: 32px
+
+    @media ($width-desktop)
+      font-size: 56px
+      line-height: 56px
+      margin-bottom: 22px
 
   &__text
     font-size: 16px
@@ -42,4 +62,7 @@
     @media ($width-tablet)
       margin-bottom: 40px
       padding-top: 2px
+
+    @media ($width-desktop)
+      font-size: 18px
 

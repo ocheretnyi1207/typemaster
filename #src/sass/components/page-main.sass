@@ -1,0 +1,52 @@
+.page-main
+  &__wrap
+    @media ($width-desktop)
+      display: flex
+      justify-content: space-between
+
+  &__wrapper
+    @media ($width-tablet)
+      padding-top: 69px
+      display: flex
+      justify-content: space-between
+
+    @media ($width-desktop)
+      width: 261px
+      padding-top: 128px
+      padding-left: 5px
+      display: block
+
+  &__title
+    width: 255px
+    margin: 0 auto
+    text-align: center
+    text-transform: uppercase
+    font-weight: 900
+    font-size: 32px
+    line-height: 36px
+    margin-bottom: 24px
+
+    @media ($width-tablet)
+      padding-top: 0
+      margin: 0
+      text-align: left
+
+    @media ($width-desktop)
+      margin-bottom: 27px
+
+  &__text
+    font-weight: 500
+    font-size: 16px
+    line-height: 26px
+    text-align: center
+    color: $color-light-slate-gray
+
+    @media ($width-tablet)
+      padding-top: 15px
+      width: 398px
+      text-align: left
+
+    @media ($width-desktop)
+      width: 100%
+      padding-top: 0
+

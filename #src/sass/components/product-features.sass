@@ -7,6 +7,9 @@
     justify-content: space-between
     flex-wrap: wrap
 
+  @media ($width-desktop)
+    padding-top: 165px
+
   & li:first-child::before
     content: ""
     background: url("/img/icon-pc.svg") no-repeat
@@ -35,6 +38,9 @@
       width: 20px
       left: 26px
 
+    @media ($width-desktop)
+      left: 23px
+
 
   & li:nth-child(4n+3)::before
     content: ""
@@ -48,6 +54,9 @@
 
     @media ($width-tablet)
       left: 18px
+
+    @media ($width-desktop)
+      left: 16px
 
   & li:last-child::before
     content: ""
@@ -75,6 +84,11 @@
       padding-top: 105px
       margin-bottom: 72px
 
+    @media ($width-desktop)
+      width: 255px
+      margin-bottom: 0
+      padding-top: 114px
+
     &::after
       position: absolute
       content: ""
@@ -89,6 +103,9 @@
       @media ($width-tablet)
         width: 71px
         left: 0
+
+      @media ($width-desktop)
+        width: 65px
 
     &-title
       text-transform: uppercase
