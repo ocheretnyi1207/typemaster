@@ -1,14 +1,28 @@
 .gallery
+  position: relative
   display: flex
   justify-content: space-between
-  margin-right: 24px
+  margin-bottom: 72px
 
   @media ($width-tablet)
     width: 689px
     margin: 0 auto
-    padding-top: 17px
+    margin-bottom: 0
 
   @media ($width-desktop)
     width: 730px
-    padding-top: 15px
     margin: 0
+
+  &__item
+    &:first-child
+      position: absolute
+      left: -46px
+
+      @media ($width-inter-mobile)
+        position: static
+
+    &:last-child
+      margin-left: 107px
+
+      @media ($width-inter-mobile)
+        margin-left: 0
